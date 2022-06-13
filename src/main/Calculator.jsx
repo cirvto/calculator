@@ -75,26 +75,32 @@ export default class Calculator extends Component {
 
     render() {
         return (
-            <div className='Calculator'>
-                <Display value={this.state.displayValue }/>
-                <Button label='AC' click={this.clearMemory} Triple/>
-                <Button label='/'  click={this.setOperation} Operation/>
-                <Button label='7' click={this.addDigit}/>
-                <Button label='8' click={this.addDigit}/>
-                <Button label='9' click={this.addDigit}/>
-                <Button label='*' click={this.setOperation} Operation/>
-                <Button label='4' click={this.addDigit}/>
-                <Button label='5' click={this.addDigit}/>
-                <Button label='6' click={this.addDigit}/>
-                <Button label='-' click={this.setOperation} Operation/>
-                <Button label='1' click={this.addDigit}/>
-                <Button label='2' click={this.addDigit}/>
-                <Button label='3' click={this.addDigit}/>
-                <Button label='+' click={this.setOperation} Operation/>
-                <Button label='0' click={this.addDigit} Double/>
-                <Button label='.' click={this.addDigit}/>
-                <Button label='=' click={this.setOperation} Operation/>
+            <div className='Global'>
+                <div className='Title-Container'>
+                    <h1 className='Title'>Calculdora Básica com React</h1>
+                </div>
+                <div className='Calculator'>
+                    <Display value={this.state.displayValue }/>
+                    <Button label='AC' click={this.clearMemory} Triple/>
+                    <Button label='/'  click={this.setOperation} Operation/>
+                    <Button label='7' click={this.addDigit}/>
+                    <Button label='8' click={this.addDigit}/>
+                    <Button label='9' click={this.addDigit}/>
+                    <Button label='*' click={this.setOperation} Operation/>
+                    <Button label='4' click={this.addDigit}/>
+                    <Button label='5' click={this.addDigit}/>
+                    <Button label='6' click={this.addDigit}/>
+                    <Button label='-' click={this.setOperation} Operation/>
+                    <Button label='1' click={this.addDigit}/>
+                    <Button label='2' click={this.addDigit}/>
+                    <Button label='3' click={this.addDigit}/>
+                    <Button label='+' click={this.setOperation} Operation/>
+                    <Button label='0' click={this.addDigit} Double/>
+                    <Button label='.' click={this.addDigit}/>
+                    <Button label='=' click={this.setOperation} Operation/>
+                </div>
             </div>
+
         )
     }
 }
